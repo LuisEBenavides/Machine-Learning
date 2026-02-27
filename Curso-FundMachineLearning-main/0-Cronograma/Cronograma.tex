@@ -1,0 +1,113 @@
+\documentclass[a4,11pt]{aleph-notas}
+% Se puede ver la documentación aquí: 
+% https://github.com/alephsub0/LaTeX_aleph-notas
+
+% -- Paquetes adicionales 
+\usepackage{enumitem}
+\usepackage{array,booktabs,multirow,makecell}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{url}
+
+% -- Datos 
+\institucion{Sociedad Ecuatoriana de Estadística}
+\asignatura{Fundamentos de Machine Learning}
+\tema{Cronograma y actividades}
+\autor{Andrés Merino}
+\fecha{Febrero 2026}
+
+\logouno[0.14\textwidth]{Logos/logoSEE}
+\definecolor{colortext}{HTML}{008dc3}
+\definecolor{colordef}{HTML}{008dc3}
+\fuente{montserrat}
+
+
+% -- Comandos para tablas
+\newcolumntype{C}[1]{>{\hspace{0pt}\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\definecolor{verde}{RGB}{0, 255, 127}
+\definecolor{celeste}{RGB}{68,195,218}
+
+\begin{document}
+\addtolength{\headheight}{1.8\baselineskip}
+\addtolength{\voffset}{-1.5\baselineskip}
+
+\encabezado
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resultados de aprendizaje} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}[leftmargin=*]
+\item 
+    \textbf{RdA 1:} Plantear los conceptos fundamentales del aprendizaje automático.
+\item 
+    \textbf{RdA 2:} Aplicar modelos de aprendizaje automático supervisado y no supervisado.
+\item
+    \textbf{RdA 3:} Resolver problemas prácticos mediante el uso de modelos de aprendizaje automático.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contenidos generales} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item 
+    Introducción al Aprendizaje Automático: conceptos básicos, flujo de trabajo, tipos de aprendizaje y métricas de distancia.
+\item 
+    Preprocesamiento de Datos: transformación y reducción de dimensionalidad (PCA).
+\item 
+    Métodos de Evaluación y Validación de Modelos: partición entrenamiento–prueba, validación cruzada y sobreajuste.
+\item 
+    Aprendizaje No Supervisado: fundamentos, métricas de similitud, clustering jerárquico y k-means.
+\item 
+    Aprendizaje Supervisado: métricas, k-NN, SVM, redes neuronales, árboles de decisión y métodos de ensamble.
+\item 
+    Ajuste y Optimización de Modelos: búsqueda de hiperparámetros, guardado y carga de modelos.
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Actividades de evaluación} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+En el transcurso del curso se presentarán \href{8 (ocho) ejercicios simples}, elaborados en cuadernos de Jupyter, que cada asistente deberá desarrollar con un conjunto de datos a elección.
+
+Para la aprobación del curso, se debera presentar 5 (cinco) de los 8 (ocho) ejercicios. Estos deben ser enviados en foramto PDF al correo aemerinot@gmail.com con el asunto: «Actividad Fund. Machine Learning - Marzo 2026»; en el mensaje se debe indicar el nombre completo. La fecha máxima de envío será el domingo 15 de marzo de 2026.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cronograma de Desarrollo del Curso} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}\small
+\setlength{\extrarowheight}{0ex}
+\setlength{\belowrulesep}{.6ex}
+\begin{longtable}{cccL{12cm}}
+    \toprule
+    &&\thead{Fecha}&\thead{Detalle de contenido}  \\
+    \midrule
+  \endfirsthead
+    \multicolumn{4}{l}{\footnotesize \ldots viene de la página anterior}\\
+    \toprule
+    &&\thead{Fecha}&\thead{Detalle de contenido}  \\
+    \midrule
+  \endhead
+        \bottomrule  \multicolumn{4}{r}{\footnotesize Continúa en la siguiente página\ldots}
+  \endfoot
+        \bottomrule
+  \endlastfoot
+1	&	1	&	18-feb	&	Conceptos básicos del Aprendizaje Automático \\	
+	&	2	&	19-feb	&	Preparación de datos: normalización y PCA	\\	\midrule
+2	&	3	&	23-feb	&	Conjuntos de entrenamiento y prueba; validación cruzada	\\		
+	&	4	&	24-feb	&	Aprendizaje no supervisado: métricas e interpretación \\	
+	&	5	&	25-feb	&	Agrupamiento k-Means y Clustering jerárquico	\\ 
+	&	6	&	26-feb	&	Aprendizaje supervisado: métricas y k-NN	\\	\midrule
+3	&	7	&	02-mar	&	SVM	y Árboles de decisión\\	
+	&	8	&	03-mar	&	Redes neuronales: perceptrón y perceptrón multicapa	\\		
+	&	9	&	04-mar	&	Ensamble de modelos	 y Optimización de hiperparámetros	\\		
+\end{longtable}
+\end{center}
+
+\end{document} 
